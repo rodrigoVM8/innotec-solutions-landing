@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INNOTEC Solutions | Automatización y software a medida para tu negocio</title>
+  <meta name="description" content="Automatización de procesos y software a medida para pymes en Lima y todo el Perú. Deja de perder horas en tareas repetitivas. Escríbenos por WhatsApp." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://innotec.solutions/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_PE" />
+  <meta property="og:url" content="https://innotec.solutions/" />
+  <meta property="og:title" content="INNOTEC Solutions | Automatización y software a medida para tu negocio" />
+  <meta property="og:description" content="Tecnología que trabaja mientras tú creces. Atendemos Lima y todo el Perú." />
+  <meta property="og:image" content="https://innotec.solutions/assets/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="INNOTEC Solutions | Automatización y software a medida para tu negocio" />
+  <meta name="twitter:description" content="Tecnología que trabaja mientras tú creces. Atendemos Lima y todo el Perú." />
+
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!--
+    Facebook Pixel — pega aquí el snippet de Meta Pixel
+    <script>...</script>
+  -->
+
+  <!--
+    Google Analytics — pega aquí el snippet de GA4
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+    <script>...</script>
+  -->
+
+  <style>
+    :root {
+      --bg: #05070c;
+      --navy: #0b1220;
+      --navy-2: #121a2b;
+      --accent: #22d3b4;
+      --accent-bright: #3de0c4;
+      --accent-dim: rgba(34, 211, 180, 0.16);
+      --accent-border: rgba(34, 211, 180, 0.4);
+      --text: #f2f5f8;
+      --muted: #9aa6b5;
+      --line: rgba(255, 255, 255, 0.08);
+      --wa: #25d366;
+      --radius: 14px;
+      --max: 1080px;
+      --nav-h: 3.75rem;
+      --font-display: "Space Grotesk", system-ui, sans-serif;
+      --font-body: Inter, system-ui, sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-display);
+      line-height: 1.15;
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+
+    p { margin: 0; }
+
+    .container {
+      width: min(100% - 2rem, var(--max));
+      margin-inline: auto;
+    }
+
+    .section { padding: 4.5rem 0; }
+
+    .section-head {
+      max-width: 38rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.55rem, 4.5vw, 2.15rem);
+      margin-bottom: 0.65rem;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .accent { color: var(--accent); }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1rem;
+      border: none;
+      border-radius: 12px;
+      padding: 0.95rem 1.35rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .btn:active { transform: scale(0.98); }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #041018;
+      box-shadow: 0 10px 30px rgba(34, 211, 180, 0.28);
+    }
+
+    .btn-primary:hover { background: var(--accent-bright); }
+
+    .btn-wa {
+      background: var(--wa);
+      color: #fff;
+    }
+
+    .btn-wa:hover { filter: brightness(1.06); }
+
+    .btn-nav {
+      padding: 0.55rem 0.9rem;
+      font-size: 0.88rem;
+      background: var(--accent);
+      color: #041018;
+    }
+
+    .btn-nav:hover { background: var(--accent-bright); }
+
+    .btn-block { width: 100%; }
+
+    .btn svg {
+      width: 1.15rem;
+      height: 1.15rem;
+      flex-shrink: 0;
+    }
+
+    .btn-sm {
+      padding: 0.7rem 1.1rem;
+      font-size: 0.92rem;
+    }
+
+    .link-wa {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .link-wa:hover { color: var(--accent-bright); }
+
+    /* Reveal + stagger */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .hero-cascade > * {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+
+    .hero-cascade.is-ready > *:nth-child(1) { transition-delay: 0.05s; }
+    .hero-cascade.is-ready > *:nth-child(2) { transition-delay: 0.15s; }
+    .hero-cascade.is-ready > *:nth-child(3) { transition-delay: 0.25s; }
+    .hero-cascade.is-ready > *:nth-child(4) { transition-delay: 0.35s; }
+    .hero-cascade.is-ready > *:nth-child(5) { transition-delay: 0.45s; }
+    .hero-cascade.is-ready > *:nth-child(6) { transition-delay: 0.55s; }
+
+    .hero-cascade.is-ready > * {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal,
+      .hero-cascade > * {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+      .fab-wa { animation: none !important; }
+    }
+
+    /* —— Nav —— */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      background: rgba(5, 7, 12, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      width: min(100% - 1.25rem, var(--max));
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo img {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .nav-logo span { color: var(--accent); }
+
+    .nav-links {
+      display: none;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* —— Hero —— */
+    .hero {
+      position: relative;
+      min-height: calc(100svh - var(--nav-h));
+      display: flex;
+      align-items: flex-end;
+      padding: 3.5rem 0 3.5rem;
+      overflow: hidden;
+      background:
+        linear-gradient(165deg, rgba(5, 7, 12, 0.82) 0%, rgba(11, 18, 32, 0.88) 45%, rgba(5, 7, 12, 0.94) 100%),
+        radial-gradient(ellipse 80% 55% at 70% -10%, rgba(34, 211, 180, 0.26), transparent 55%),
+        url("assets/hero.jpg") center / cover no-repeat;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(100% - 2rem, var(--max));
+      margin-inline: auto;
+    }
+
+    .brand-logo {
+      width: min(100%, 260px);
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.85rem, 6vw, 3.05rem);
+      max-width: 20ch;
+      margin-bottom: 1rem;
+    }
+
+    .hero-lead {
+      color: var(--muted);
+      font-size: clamp(1rem, 2.8vw, 1.15rem);
+      max-width: 36rem;
+      margin-bottom: 1rem;
+    }
+
+    .trust-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      align-items: center;
+      margin-bottom: 1.35rem;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--accent);
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .trust-badge::before {
+      content: "";
+      width: 0.45rem;
+      height: 0.45rem;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-dim);
+    }
+
+    .microcopy {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 0.85rem;
+    }
+
+    .hero-cta { max-width: 22rem; }
+
+    /* —— Problem —— */
+    .problem {
+      background: var(--navy);
+      border-block: 1px solid var(--line);
+    }
+
+    .pain-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .pain-list li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.85rem;
+      align-items: start;
+      padding: 1.15rem 1.2rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .pain-icon {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 8px;
+      background: var(--accent-dim);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .pain-icon svg {
+      width: 1.05rem;
+      height: 1.05rem;
+    }
+
+    .pain-list strong {
+      display: block;
+      font-family: var(--font-display);
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .pain-list span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* —— Services —— */
+    .services-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .service-card {
+      display: flex;
+      flex-direction: column;
+      padding: 1.4rem 1.3rem 1.3rem;
+      background: linear-gradient(160deg, var(--navy-2), var(--navy));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      min-height: 100%;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .service-card:hover,
+    .case-card:hover,
+    .pain-list li:hover {
+      border-color: var(--accent-border);
+      transform: translateY(-2px);
+    }
+
+    .service-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .service-card .desc {
+      color: var(--muted);
+      font-size: 0.95rem;
+      flex: 1;
+      margin-bottom: 1.15rem;
+    }
+
+    .price {
+      font-family: var(--font-display);
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 1.12rem;
+      margin-bottom: 1rem;
+    }
+
+    /* —— Cases —— */
+    .cases {
+      background: var(--navy);
+      border-block: 1px solid var(--line);
+    }
+
+    .cases-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .case-card {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(5, 7, 12, 0.45);
+      overflow: hidden;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .case-media {
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: var(--navy-2);
+    }
+
+    .case-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+    }
+
+    .case-card:hover .case-media img {
+      transform: scale(1.04);
+    }
+
+    .case-body {
+      padding: 1.25rem 1.2rem 1.35rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .case-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .case-card .case-desc {
+      color: var(--muted);
+      font-size: 0.94rem;
+      flex: 1;
+    }
+
+    .case-result {
+      margin-top: 0.85rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--line);
+      color: var(--text);
+      font-size: 0.92rem;
+    }
+
+    .case-result strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* —— Process —— */
+    .steps {
+      display: grid;
+      gap: 0.85rem;
+      counter-reset: step;
+    }
+
+    .step {
+      position: relative;
+      padding: 1.15rem 1.2rem 1.15rem 4.1rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.02);
+      counter-increment: step;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .step:hover {
+      border-color: var(--accent-border);
+      transform: translateY(-2px);
+    }
+
+    .step::before {
+      content: counter(step);
+      position: absolute;
+      left: 1.1rem;
+      top: 1.15rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #041018;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: grid;
+      place-items: center;
+    }
+
+    .step h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    /* —— About —— */
+    .about {
+      background: var(--navy);
+      border-block: 1px solid var(--line);
+    }
+
+    .about-grid {
+      display: grid;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .avatar {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 14px;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-border);
+      color: var(--accent);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.35rem;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .about-top {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .about-body {
+      max-width: 40rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-body strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* —— FAQ —— */
+    .faq-list {
+      display: grid;
+      gap: 0.65rem;
+      max-width: 42rem;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.02);
+      padding: 0.15rem 1.1rem;
+    }
+
+    summary {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 1rem 0;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: "+";
+      color: var(--accent);
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    details[open] summary::after { content: "–"; }
+
+    details p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      padding-bottom: 0.35rem;
+    }
+
+    details .faq-cta {
+      padding-bottom: 1rem;
+      font-size: 0.92rem;
+    }
+
+    /* —— Final CTA —— */
+    .final-cta {
+      text-align: center;
+      padding: 4.75rem 0 3.5rem;
+      background:
+        radial-gradient(ellipse 70% 80% at 50% 100%, rgba(34, 211, 180, 0.16), transparent 55%),
+        var(--bg);
+    }
+
+    .final-cta h2 {
+      font-size: clamp(1.55rem, 4.5vw, 2.2rem);
+      max-width: 18ch;
+      margin-inline: auto;
+      margin-bottom: 0.75rem;
+    }
+
+    .final-cta p {
+      color: var(--muted);
+      max-width: 32rem;
+      margin-inline: auto;
+      margin-bottom: 0.65rem;
+    }
+
+    .final-cta .coverage {
+      color: var(--accent);
+      font-family: var(--font-display);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .final-cta .btn {
+      min-width: min(100%, 20rem);
+    }
+
+    /* —— Footer —— */
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.75rem 0 5.5rem;
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-family: var(--font-display);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+    }
+
+    .footer-brand span { color: var(--accent); }
+
+    footer p,
+    footer a {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer a:hover { color: var(--accent); }
+
+    .footer-meta { margin-top: 0.35rem; }
+
+    /* —— FAB —— */
+    .fab-wa {
+      position: fixed;
+      right: max(1rem, env(safe-area-inset-right));
+      bottom: max(1rem, env(safe-area-inset-bottom));
+      z-index: 100;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      background: var(--wa);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      transition: transform 0.2s ease, filter 0.2s ease;
+      animation: fab-pulse 4s ease-in-out infinite;
+    }
+
+    .fab-wa:hover {
+      transform: scale(1.06);
+      filter: brightness(1.05);
+      animation: none;
+    }
+
+    .fab-wa svg {
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+
+    @keyframes fab-pulse {
+      0%, 70%, 100% {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 0 0 rgba(37, 211, 102, 0.45);
+      }
+      80% {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 0 12px rgba(37, 211, 102, 0);
+      }
+    }
+
+    /* —— Desktop —— */
+    @media (min-width: 640px) {
+      .hero {
+        align-items: center;
+        padding: 5rem 0;
+      }
+
+      .hero-cta { max-width: none; }
+
+      .nav-links { display: flex; }
+
+      .services-grid { grid-template-columns: 1fr 1fr; }
+
+      .cases-grid { grid-template-columns: 1fr 1fr; }
+
+      .steps { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (min-width: 960px) {
+      .section { padding: 5.5rem 0; }
+
+      .brand-logo { width: 300px; }
+
+      .pain-list { grid-template-columns: repeat(3, 1fr); }
+
+      .cases-grid { grid-template-columns: repeat(3, 1fr); }
+
+      .steps { grid-template-columns: repeat(4, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="icon-wa" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </symbol>
+  </svg>
+
+  <nav class="site-nav" aria-label="Principal">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#inicio">
+        INNOTEC <span>SOLUTIONS</span>
+      </a>
+      <div class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#casos">Casos</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <a
+          class="btn btn-nav"
+          href="https://wa.me/51992947775?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20negocio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >WhatsApp</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="hero-inner hero-cascade">
+      <img
+        class="brand-logo"
+        src="assets/logo.png"
+        width="300"
+        height="100"
+        alt="INNOTEC Solutions"
+      />
+
+      <h1><span class="accent">Automatiza</span> tu negocio y deja de perder horas en tareas repetitivas</h1>
+
+      <p class="hero-lead">Desarrollo de software a medida y automatización de procesos para pymes peruanas. Escríbenos y te decimos qué automatizar primero.</p>
+
+      <div class="trust-line">
+        <span class="trust-badge">Atendemos Lima y todo el Perú</span>
+      </div>
+
+      <div class="hero-cta">
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/51992947775?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20negocio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+          Escríbenos por WhatsApp
+        </a>
+        <p class="microcopy">Diagnóstico inicial por WhatsApp · respuesta en el día</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section problem" id="problema" aria-labelledby="problema-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">El problema</span>
+          <h2 id="problema-title">Si esto te suena, actúa ahora</h2>
+          <p>Cada día que tu equipo digita a mano, pierdes margen. Identifica el dolor y escríbenos para atacarlo primero.</p>
+        </div>
+
+        <ul class="pain-list">
+          <li class="reveal">
+            <div class="pain-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <div>
+              <strong>Procesos manuales que consumen horas</strong>
+              <span>Reportes, conciliaciones y cargas a sistemas hechas a mano, todos los días.</span>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="pain-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+            </div>
+            <div>
+              <strong>Errores por digitación repetida</strong>
+              <span>Un número mal tipeado y se descuadran facturas, inventarios o reportes.</span>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="pain-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+            </div>
+            <div>
+              <strong>Sin visibilidad en tiempo real</strong>
+              <span>Decisiones a ciegas porque los datos y reportes llegan tarde o incompletos.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Servicios</span>
+          <h2 id="servicios-title">Elige qué resolver y escríbenos hoy</h2>
+          <p>Precio de entrada claro. Te respondemos por WhatsApp y armamos la propuesta a tu medida.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <h3>Automatización de reportes y procesos</h3>
+            <p class="desc">Digitación manual, conciliaciones, tipo de cambio, reportes: todo automático.</p>
+            <p class="price">Desde S/ 800</p>
+            <a
+              class="btn btn-wa btn-block"
+              href="https://wa.me/51992947775?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20de%20reportes%20y%20procesos"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+              Consultar por WhatsApp
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <h3>Aplicación de gestión a medida</h3>
+            <p class="desc">Sistemas de control, inventario, ventas o reservas hechos a la medida de tu negocio. Web o escritorio.</p>
+            <p class="price">Desde S/ 2,500</p>
+            <a
+              class="btn btn-wa btn-block"
+              href="https://wa.me/51992947775?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20aplicaci%C3%B3n%20de%20gesti%C3%B3n%20a%20medida"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+              Consultar por WhatsApp
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <h3>Automatización de atención al cliente</h3>
+            <p class="desc">Bots de WhatsApp o web que responden consultas, agendan citas y filtran clientes las 24 horas.</p>
+            <p class="price">Desde S/ 1,200</p>
+            <a
+              class="btn btn-wa btn-block"
+              href="https://wa.me/51992947775?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20de%20atenci%C3%B3n%20al%20cliente%20con%20bots"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+              Consultar por WhatsApp
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <h3>Diagnóstico y consultoría de automatización</h3>
+            <p class="desc">Analizamos tus procesos y te decimos exactamente qué automatizar primero.</p>
+            <p class="price">Desde S/ 500</p>
+            <a
+              class="btn btn-wa btn-block"
+              href="https://wa.me/51992947775?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20diagn%C3%B3stico%20y%20consultor%C3%ADa%20de%20automatizaci%C3%B3n"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+              Consultar por WhatsApp
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cases" id="casos" aria-labelledby="casos-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Casos y resultados</span>
+          <h2 id="casos-title">Resultados reales. El siguiente puede ser el tuyo</h2>
+          <p>Así se ve cuando la tecnología trabaja por tu operación. Escríbenos y evaluamos tu caso.</p>
+        </div>
+
+        <div class="cases-grid">
+          <article class="case-card reveal">
+            <div class="case-media">
+              <img src="assets/case-sap.jpg" alt="Automatización contable y facturación" width="800" height="534" loading="lazy" />
+            </div>
+            <div class="case-body">
+              <h3>Automatización contable y facturación</h3>
+              <p class="case-desc">Empresa del rubro industrial. Se automatizó el registro de más de 200 facturas diarias, la búsqueda automática del tipo de cambio, la verificación de gastos operativos y la carga directa a SAP Business One.</p>
+              <p class="case-result"><strong>Resultado:</strong> de un proceso manual de varias horas diarias a un flujo automático con carga en minutos, eliminando errores de digitación.</p>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-media">
+              <img src="assets/case-delivery.jpg" alt="Aplicación tipo delivery FILO" width="800" height="570" loading="lazy" />
+            </div>
+            <div class="case-body">
+              <h3>Aplicación tipo delivery (FILO)</h3>
+              <p class="case-desc">Desarrollo de aplicación de intermediación entre clientes y negocios (similar a Rappi), con gestión de pedidos, ubicación y pagos.</p>
+              <p class="case-result"><strong>Resultado:</strong> un canal digital listo para recibir pedidos, coordinar entregas y cobrar — sin depender de planillas y llamadas sueltas.</p>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-media">
+              <img src="assets/case-restaurant.jpg" alt="Sistema de control para restaurantes" width="800" height="533" loading="lazy" />
+            </div>
+            <div class="case-body">
+              <h3>Sistema de control para restaurantes</h3>
+              <p class="case-desc">Aplicación para gestión de pedidos, mesas y control operativo en restaurantes.</p>
+              <p class="case-result"><strong>Resultado:</strong> pedidos y mesas bajo control en un solo sistema, menos errores en cocina y más velocidad en el servicio.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proceso" aria-labelledby="proceso-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Cómo trabajamos</span>
+          <h2 id="proceso-title">Empieza hoy. En 4 pasos tienes rumbo claro</h2>
+          <p>Sin rodeos: el primer paso es un mensaje por WhatsApp.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <h3>Diagnóstico gratuito</h3>
+            <p>Escríbenos. Contamos cómo opera tu negocio e identificamos qué automatizar primero.</p>
+          </article>
+          <article class="step reveal">
+            <h3>Propuesta en 24–48 h</h3>
+            <p>Recibes alcance, plazos y cotización claros. Decides con datos, no con sorpresas.</p>
+          </article>
+          <article class="step reveal">
+            <h3>Desarrollo</h3>
+            <p>Construimos e iteramos contigo. Validamos avances para no desviarnos.</p>
+          </article>
+          <article class="step reveal">
+            <h3>Entrega y soporte</h3>
+            <p>Puesta en marcha, capacitación y acompañamiento. Tu equipo empieza a usarlo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre" aria-labelledby="sobre-title">
+      <div class="container reveal">
+        <span class="eyebrow">Sobre mí</span>
+        <div class="about-top">
+          <div class="avatar" aria-hidden="true">IS</div>
+          <div>
+            <h2 id="sobre-title">Ingeniería aplicada a tu operación</h2>
+            <p class="trust-badge" style="margin-top:0.4rem">Atendemos Lima y todo el Perú</p>
+          </div>
+        </div>
+        <p class="about-body">
+          Soy <strong>ingeniero mecatrónico y desarrollador de software</strong> con experiencia en automatización industrial y de procesos de negocio, además del desarrollo de aplicaciones web, móviles y de escritorio.
+          Trabajo con pymes peruanas para convertir procesos manuales en sistemas confiables que ahorran tiempo y reducen errores. Si tienes un dolor operativo, escríbeme y lo evaluamos juntos.
+        </p>
+        <a
+          class="btn btn-primary btn-sm"
+          href="https://wa.me/51992947775?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20negocio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+          Hablemos por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2 id="faq-title">Resuelve dudas y escríbenos</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="reveal">
+            <summary>¿Cuánto tiempo toma un proyecto?</summary>
+            <p>Depende del alcance. Un diagnóstico o una automatización puntual puede resolverse en días o pocas semanas. Una aplicación de gestión a medida suele tomar varias semanas. En la propuesta te damos un plazo concreto.</p>
+            <p class="faq-cta"><a class="link-wa" href="https://wa.me/51992947775?text=Hola%2C%20quiero%20saber%20cu%C3%A1nto%20tomar%C3%ADa%20automatizar%20mi%20negocio" target="_blank" rel="noopener noreferrer">¿Dudas? Escríbenos por WhatsApp</a></p>
+          </details>
+          <details class="reveal">
+            <summary>¿Trabajan con negocios pequeños?</summary>
+            <p>Sí. Trabajamos con pymes y operaciones en crecimiento en Lima y todo el Perú. Si un proceso te consume horas o genera errores, hay algo que automatizar.</p>
+            <p class="faq-cta"><a class="link-wa" href="https://wa.me/51992947775?text=Hola%2C%20tengo%20un%20negocio%20peque%C3%B1o%20y%20quiero%20automatizar" target="_blank" rel="noopener noreferrer">¿Dudas? Escríbenos por WhatsApp</a></p>
+          </details>
+          <details class="reveal">
+            <summary>¿Qué pasa si no sé exactamente qué necesito?</summary>
+            <p>Empieza por el diagnóstico. Conversamos por WhatsApp, entendemos cómo trabajas hoy y te proponemos qué automatizar primero, con prioridad y retorno claros.</p>
+            <p class="faq-cta"><a class="link-wa" href="https://wa.me/51992947775?text=Hola%2C%20no%20s%C3%A9%20exactamente%20qu%C3%A9%20necesito%2C%20quiero%20un%20diagn%C3%B3stico" target="_blank" rel="noopener noreferrer">Empieza el diagnóstico por WhatsApp</a></p>
+          </details>
+          <details class="reveal">
+            <summary>¿Dan soporte después de la entrega?</summary>
+            <p>Sí. Incluimos acompañamiento post-entrega para estabilizar el sistema y resolver dudas. Si necesitas soporte continuo o nuevas mejoras, lo acordamos según tu operación.</p>
+            <p class="faq-cta"><a class="link-wa" href="https://wa.me/51992947775?text=Hola%2C%20quiero%20saber%20sobre%20el%20soporte%20post-entrega" target="_blank" rel="noopener noreferrer">¿Dudas? Escríbenos por WhatsApp</a></p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contacto" aria-labelledby="cta-title">
+      <div class="container reveal">
+        <h2 id="cta-title">Recupera horas de tu semana. Empieza hoy</h2>
+        <p>Escríbenos por WhatsApp. Te respondemos, entendemos tu proceso y te decimos qué conviene automatizar primero.</p>
+        <p class="coverage">Atendemos Lima y todo el Perú</p>
+        <a
+          class="btn btn-wa"
+          href="https://wa.me/51992947775?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20negocio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-brand">INNOTEC <span>SOLUTIONS</span></p>
+      <p><a href="https://innotec.solutions" rel="noopener">innotec.solutions</a></p>
+      <p class="footer-meta">Lima, Perú · Atendemos Lima y todo el Perú</p>
+    </div>
+  </footer>
+
+  <a
+    class="fab-wa"
+    href="https://wa.me/51992947775?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20negocio"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Escribir por WhatsApp"
+  >
+    <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+  </a>
+
+  <script>
+    (function () {
+      var hero = document.querySelector(".hero-cascade");
+      if (hero) {
+        requestAnimationFrame(function () {
+          hero.classList.add("is-ready");
+        });
+      }
+
+      var nodes = document.querySelectorAll(".reveal");
+      if (!nodes.length) return;
+
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        nodes.forEach(function (el) { el.classList.add("is-visible"); });
+        return;
+      }
+
+      if (!("IntersectionObserver" in window)) {
+        nodes.forEach(function (el) { el.classList.add("is-visible"); });
+        return;
+      }
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            var el = entry.target;
+            var siblings = el.parentElement
+              ? Array.prototype.filter.call(el.parentElement.children, function (child) {
+                  return child.classList && child.classList.contains("reveal");
+                })
+              : [];
+            var index = siblings.indexOf(el);
+            if (index < 0) index = 0;
+            el.style.transitionDelay = Math.min(index * 0.08, 0.4) + "s";
+            el.classList.add("is-visible");
+            observer.unobserve(el);
+          });
+        },
+        { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+      );
+
+      nodes.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
+</body>
+</html>
