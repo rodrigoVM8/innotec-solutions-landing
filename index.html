@@ -263,31 +263,29 @@
 
     .nav-logo {
       display: flex;
-      align-items: center;
-      gap: 0.5rem;
+      align-items: baseline;
+      gap: 0.35rem;
       font-family: var(--font-display);
       font-weight: 700;
-      font-size: 0.95rem;
-      letter-spacing: -0.02em;
-    }
-
-    .nav-logo img {
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
-      object-fit: cover;
+      font-size: clamp(0.92rem, 2.5vw, 1.05rem);
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      line-height: 1;
     }
 
     .nav-logo span { color: var(--accent); }
 
     .nav-links {
       display: none;
-      gap: 1.25rem;
-      font-size: 0.9rem;
+      gap: 1.5rem;
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
       color: var(--muted);
     }
 
-    .nav-links a:hover { color: var(--accent); }
+    .nav-links a:hover { color: var(--text); }
 
     .nav-actions {
       display: flex;
@@ -304,8 +302,8 @@
       padding: 3.5rem 0 3.5rem;
       overflow: hidden;
       background:
-        linear-gradient(165deg, rgba(5, 7, 12, 0.82) 0%, rgba(11, 18, 32, 0.88) 45%, rgba(5, 7, 12, 0.94) 100%),
-        radial-gradient(ellipse 80% 55% at 70% -10%, rgba(34, 211, 180, 0.26), transparent 55%),
+        linear-gradient(165deg, rgba(5, 7, 12, 0.88) 0%, rgba(11, 18, 32, 0.92) 45%, rgba(5, 7, 12, 0.96) 100%),
+        radial-gradient(ellipse 80% 55% at 70% -10%, rgba(34, 211, 180, 0.22), transparent 55%),
         url("assets/hero.jpg") center / cover no-repeat;
     }
 
@@ -328,10 +326,29 @@
       margin-inline: auto;
     }
 
-    .brand-logo {
-      width: min(100%, 260px);
-      height: auto;
+    .hero-brand {
       margin-bottom: 1.5rem;
+    }
+
+    .hero-brand-name {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(1.55rem, 5vw, 2.35rem);
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      line-height: 1.05;
+      color: var(--text);
+    }
+
+    .hero-brand-name span {
+      color: var(--accent);
+    }
+
+    .hero-brand-tagline {
+      margin-top: 0.55rem;
+      font-size: 0.98rem;
+      color: var(--muted);
+      font-style: italic;
     }
 
     .hero h1 {
@@ -815,8 +832,6 @@
     @media (min-width: 960px) {
       .section { padding: 5.5rem 0; }
 
-      .brand-logo { width: 300px; }
-
       .pain-list { grid-template-columns: repeat(3, 1fr); }
 
       .cases-grid { grid-template-columns: repeat(3, 1fr); }
@@ -855,13 +870,10 @@
 
   <header class="hero" id="inicio">
     <div class="hero-inner hero-cascade">
-      <img
-        class="brand-logo"
-        src="assets/logo.png"
-        width="300"
-        height="100"
-        alt="INNOTEC Solutions"
-      />
+      <div class="hero-brand">
+        <p class="hero-brand-name">INNOTEC <span>SOLUTIONS</span></p>
+        <p class="hero-brand-tagline">Tecnología que trabaja mientras tú creces</p>
+      </div>
 
       <h1><span class="accent">Automatiza</span> tu negocio y deja de perder horas en tareas repetitivas</h1>
 
