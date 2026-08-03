@@ -19,7 +19,8 @@
   <meta name="twitter:title" content="INNOTEC Solutions | Automatización y software a medida para tu negocio" />
   <meta name="twitter:description" content="Tecnología que trabaja mientras tú creces. Atendemos Lima y todo el Perú." />
 
-  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/logo-mark.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -261,10 +262,28 @@
       gap: 0.75rem;
     }
 
+    /* Logo = solo el símbolo | Logotipo = símbolo + texto */
+    .logo-mark {
+      display: block;
+      flex-shrink: 0;
+      border-radius: 8px;
+    }
+
+    .logo-mark--nav {
+      width: 1.85rem;
+      height: 1.85rem;
+    }
+
+    .logo-mark--hero {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 12px;
+    }
+
     .nav-logo {
       display: flex;
-      align-items: baseline;
-      gap: 0.35rem;
+      align-items: center;
+      gap: 0.55rem;
       font-family: var(--font-display);
       font-weight: 700;
       font-size: clamp(0.92rem, 2.5vw, 1.05rem);
@@ -273,7 +292,13 @@
       line-height: 1;
     }
 
-    .nav-logo span { color: var(--accent); }
+    .nav-logo-text {
+      display: flex;
+      align-items: baseline;
+      gap: 0.35rem;
+    }
+
+    .nav-logo-text > span { color: var(--accent); }
 
     .nav-links {
       display: none;
@@ -330,6 +355,12 @@
       margin-bottom: 1.5rem;
     }
 
+    .hero-logotype {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
     .hero-brand-name {
       font-family: var(--font-display);
       font-weight: 700;
@@ -338,6 +369,7 @@
       text-transform: uppercase;
       line-height: 1.05;
       color: var(--text);
+      margin: 0;
     }
 
     .hero-brand-name span {
@@ -345,7 +377,7 @@
     }
 
     .hero-brand-tagline {
-      margin-top: 0.55rem;
+      margin-top: 0.65rem;
       font-size: 0.98rem;
       color: var(--muted);
       font-style: italic;
@@ -829,7 +861,12 @@
       .steps { grid-template-columns: 1fr 1fr; }
     }
 
-    @media (min-width: 960px) {
+      @media (min-width: 960px) {
+      .logo-mark--hero {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+
       .section { padding: 5.5rem 0; }
 
       .pain-list { grid-template-columns: repeat(3, 1fr); }
@@ -849,8 +886,9 @@
 
   <nav class="site-nav" aria-label="Principal">
     <div class="nav-inner">
-      <a class="nav-logo" href="#inicio">
-        INNOTEC <span>SOLUTIONS</span>
+      <a class="nav-logo" href="#inicio" aria-label="INNOTEC Solutions">
+        <img class="logo-mark logo-mark--nav" src="assets/logo-mark.svg" width="32" height="32" alt="" />
+        <span class="nav-logo-text">INNOTEC <span>SOLUTIONS</span></span>
       </a>
       <div class="nav-links">
         <a href="#servicios">Servicios</a>
@@ -871,7 +909,10 @@
   <header class="hero" id="inicio">
     <div class="hero-inner hero-cascade">
       <div class="hero-brand">
-        <p class="hero-brand-name">INNOTEC <span>SOLUTIONS</span></p>
+        <div class="hero-logotype">
+          <img class="logo-mark logo-mark--hero" src="assets/logo-mark.svg" width="48" height="48" alt="" />
+          <p class="hero-brand-name">INNOTEC <span>SOLUTIONS</span></p>
+        </div>
         <p class="hero-brand-tagline">Tecnología que trabaja mientras tú creces</p>
       </div>
 
