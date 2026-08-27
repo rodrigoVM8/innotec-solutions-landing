@@ -56,6 +56,7 @@ window.INNOTEC_PROJECTS = [
     platforms: ["Web", "Mobile"],
     technologies: ["Web", "Mobile", "Panel admin", "APIs"],
     links: [
+      { label: "Google Play", url: "https://play.google.com/store/apps/details?id=com.abraxas.filo&hl=es_PE" },
       { label: "Ver FILO", url: "https://filobarberco.com/" }
     ],
     detailUrl: "proyectos/filo.html"
