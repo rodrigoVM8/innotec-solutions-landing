@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Placeholder de proyecto">
+  <rect width="1200" height="800" fill="#121a2b"/>
+  <rect x="1" y="1" width="1198" height="798" fill="none" stroke="rgba(34,211,180,0.25)" stroke-width="2"/>
+  <text x="600" y="380" fill="#9aa6b5" font-family="system-ui,sans-serif" font-size="28" text-anchor="middle">INNOTEC Solutions</text>
+  <text x="600" y="430" fill="#22d3b4" font-family="system-ui,sans-serif" font-size="22" text-anchor="middle">Proyecto</text>
+</svg>
