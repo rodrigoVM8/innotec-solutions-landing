@@ -1079,32 +1079,34 @@
 .blog-card { color: inherit; text-decoration: none; }
 
 /* —— Portfolio —— */
-.portfolio-hero {
-  padding: 3.5rem 0 2.5rem;
-  background:
-    radial-gradient(ellipse 70% 60% at 80% 0%, rgba(34, 211, 180, 0.14), transparent 50%),
-    var(--navy);
-  border-bottom: 1px solid var(--line);
+.portfolio-hub {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  scroll-margin-top: 5.5rem;
 }
-.portfolio-hero h1 {
+.portfolio-hub-head {
+  margin-bottom: 1.75rem;
+}
+.portfolio-hub-head h1 {
   font-size: clamp(1.75rem, 4.5vw, 2.5rem);
-  max-width: 24ch;
+  max-width: 22ch;
   margin-bottom: 0.75rem;
+  line-height: 1.15;
 }
-.portfolio-hero-lead {
+.portfolio-hub-lead {
   color: var(--muted);
   max-width: 42rem;
   font-size: 1.05rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
-.portfolio-hero-cta {
+.portfolio-hub-cta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
   align-items: center;
 }
 .portfolio-featured-wrap {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 .portfolio-featured {
   display: grid;
@@ -1333,12 +1335,32 @@
 .company-panel-body .about-body {
   margin-bottom: 0.75rem;
 }
-.company-coverage {
+.company-story + .company-story {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+.company-subhead {
   font-family: var(--font-display);
-  font-size: 0.88rem;
+  font-size: 0.78rem;
   font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+.company-note {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-bottom: 0;
+}
+.company-coverage {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 0;
+}
+.company-panel-body .company-story .about-body strong {
+  color: var(--text);
 }
 .company-block h2 {
   margin-bottom: 0.35rem;

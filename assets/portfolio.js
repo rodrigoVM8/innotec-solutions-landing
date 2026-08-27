@@ -202,5 +202,9 @@
   renderFeatured(featuredProject);
   renderFilters();
   renderGrid();
-  observeReveal(document.querySelectorAll(".portfolio-hero .reveal, #portfolio-featured .reveal"));
+  function initPageReveal() {
+    observeReveal(document.querySelectorAll(".reveal:not(.is-visible)"));
+  }
+
+  initPageReveal();
 })();
