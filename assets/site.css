@@ -1310,6 +1310,36 @@
 .company-block {
   max-width: 42rem;
 }
+.company-panel {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.75rem 1.35rem;
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(ellipse 80% 70% at 100% 0%, rgba(34, 211, 180, 0.12), transparent 55%),
+    rgba(5, 7, 12, 0.55);
+}
+.company-panel-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.company-panel-logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 0.35rem;
+}
+.company-panel-body .about-body {
+  margin-bottom: 0.75rem;
+}
+.company-coverage {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
 .company-block h2 {
   margin-bottom: 0.35rem;
 }
@@ -1347,6 +1377,18 @@
 .company-metric span {
   font-size: 0.82rem;
   color: var(--muted);
+}
+@media (min-width: 768px) {
+  .company-panel {
+    grid-template-columns: minmax(14rem, 1fr) 1.4fr;
+    gap: 2rem;
+    padding: 2rem 2.25rem;
+    align-items: start;
+  }
+  .company-panel-brand {
+    padding-right: 1rem;
+    border-right: 1px solid var(--line);
+  }
 }
 .detail-hero-img {
   width: 100%;
