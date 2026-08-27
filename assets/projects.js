@@ -43,6 +43,24 @@ window.INNOTEC_PROJECTS = [
     detailUrl: "proyectos/llama-express.html"
   },
   {
+    slug: "filo",
+    title: "FILO",
+    category: "Mobile · Web · Barberías",
+    type: "product",
+    featured: false,
+    filters: ["mobile", "web"],
+    shortDescription:
+      "App móvil y web para barberos, barberías y clientes: reservas a domicilio o en local, paneles de barbería, POS y fidelización.",
+    image: "assets/projects/filo.jpg",
+    imageAlt: "FILO — app para barberos, barberías y clientes",
+    platforms: ["Web", "Mobile"],
+    technologies: ["Web", "Mobile", "Panel admin", "APIs"],
+    links: [
+      { label: "Ver FILO", url: "https://filobarberco.com/" }
+    ],
+    detailUrl: "proyectos/filo.html"
+  },
+  {
     slug: "plataforma-multiservicio",
     title: "Plataforma multiservicio",
     category: "Mobile · Web · E-commerce",
