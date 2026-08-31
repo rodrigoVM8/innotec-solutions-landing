@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sabor Limeño | Restaurante peruano</title>
+  <meta name="description" content="Cocina peruana auténtica en Lima. Carta digital, menú del día, reservas y pedidos por WhatsApp." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/restaurante.css" />
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="icon-wa" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </symbol>
+  </svg>
+
+  <header class="rs-nav" id="rs-nav">
+    <div class="rs-nav-inner">
+      <a class="rs-logo" href="#inicio" aria-label="Sabor Limeño">
+        <span class="rs-logo-mark">SL</span>
+        <span id="rs-logo-name">Sabor</span><span> Limeño</span>
+      </a>
+      <nav class="rs-nav-links" aria-label="Principal">
+        <a href="#destacados">Destacados</a>
+        <a href="#carta">Carta</a>
+        <a href="#historia">Historia</a>
+        <a href="#galeria">Galería</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
+      <a class="rs-btn rs-btn--primary rs-btn--sm" href="#carta">Ver carta</a>
+      <button class="rs-nav-toggle" id="rs-nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="rs-nav-mobile" aria-label="Menú móvil">
+      <a href="#destacados">Destacados</a>
+      <a href="#carta">Carta</a>
+      <a href="#historia">Historia</a>
+      <a href="#galeria">Galería</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+  </header>
+
+  <section class="rs-hero" id="inicio">
+    <div class="rs-hero-bg">
+      <img id="rs-hero-img" src="assets/images/hero.jpg" alt="" width="1920" height="1080" fetchpriority="high" />
+      <div class="rs-hero-overlay"></div>
+    </div>
+    <div class="rs-hero-content rs-reveal">
+      <p class="rs-hero-tagline" id="rs-hero-tagline">Cocina peruana · Hecho con alma</p>
+      <h1 id="rs-hero-title">Sabores del Perú, en cada bocado</h1>
+      <p class="rs-hero-lead" id="rs-hero-lead"></p>
+      <div class="rs-hero-cta">
+        <a class="rs-btn rs-btn--primary" href="#carta">Ver carta</a>
+        <a class="rs-btn rs-btn--outline" id="rs-hero-reserve" href="#">Reservar mesa</a>
+        <a class="rs-btn rs-btn--wa" id="rs-hero-wa" href="#" target="_blank" rel="noopener noreferrer">
+          <svg aria-hidden="true" width="18" height="18"><use href="#icon-wa"></use></svg>
+          Pedir por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="rs-section rs-section--white" id="destacados" aria-labelledby="destacados-title">
+    <div class="rs-container">
+      <div class="rs-section-head rs-reveal">
+        <span class="rs-eyebrow">Platos destacados</span>
+        <h2 id="destacados-title">Lo más pedido de la casa</h2>
+        <p>Desliza y pide directo por WhatsApp.</p>
+      </div>
+      <div class="rs-carousel-wrap rs-reveal" data-carousel>
+        <div class="rs-carousel-head">
+          <h3>Favoritos del chef</h3>
+          <div class="rs-carousel-controls">
+            <button type="button" class="rs-carousel-btn" data-carousel-prev aria-label="Anterior">‹</button>
+            <button type="button" class="rs-carousel-btn" data-carousel-next aria-label="Siguiente">›</button>
+          </div>
+        </div>
+        <div class="rs-carousel" id="rs-featured-carousel"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rs-section" id="carta" aria-labelledby="carta-title">
+    <div class="rs-container">
+      <div class="rs-section-head rs-reveal">
+        <span class="rs-eyebrow">Carta digital</span>
+        <h2 id="carta-title">Nuestro menú</h2>
+        <p>Entradas, fondos, bebidas, postres y promociones.</p>
+      </div>
+      <div class="rs-menu-dia rs-reveal" id="rs-menu-dia"></div>
+      <div class="rs-menu-tabs" id="rs-menu-tabs" role="toolbar" aria-label="Categorías del menú"></div>
+      <div class="rs-menu-grid" id="rs-menu-grid"></div>
+    </div>
+  </section>
+
+  <section class="rs-section rs-section--white" id="historia" aria-labelledby="historia-title">
+    <div class="rs-container">
+      <div class="rs-story rs-reveal">
+        <div class="rs-story-media">
+          <img id="rs-story-img" src="assets/images/gallery-3.jpg" alt="" width="600" height="450" loading="lazy" />
+        </div>
+        <div class="rs-story-body">
+          <span class="rs-eyebrow">Nuestra historia</span>
+          <h2 id="rs-story-title">Nuestra historia</h2>
+          <div id="rs-story-body"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rs-section" id="galeria" aria-labelledby="galeria-title">
+    <div class="rs-container">
+      <div class="rs-section-head rs-reveal">
+        <span class="rs-eyebrow">Galería</span>
+        <h2 id="galeria-title">Ambiente, platos y momentos</h2>
+        <p>Síguenos en redes para ver más.</p>
+      </div>
+      <div class="rs-gallery" id="rs-gallery"></div>
+    </div>
+  </section>
+
+  <section class="rs-section rs-section--white" id="promos" aria-labelledby="promos-title">
+    <div class="rs-container">
+      <div class="rs-promo-band rs-reveal">
+        <div class="rs-promo-media">
+          <img id="rs-promo-img" src="assets/images/promo.jpg" alt="" width="600" height="375" loading="lazy" />
+        </div>
+        <div class="rs-promo-body">
+          <span class="rs-promo-badge" id="rs-promo-badge">Promoción</span>
+          <h3 id="rs-promo-title">Noche criolla</h3>
+          <p id="rs-promo-desc"></p>
+          <a class="rs-btn rs-btn--primary" id="rs-promo-cta" href="#">Reservar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rs-section" id="testimonios" aria-labelledby="testimonios-title">
+    <div class="rs-container">
+      <div class="rs-section-head rs-reveal">
+        <span class="rs-eyebrow">Testimonios</span>
+        <h2 id="testimonios-title">Lo que dicen nuestros clientes</h2>
+      </div>
+      <div class="rs-testimonials rs-reveal">
+        <div class="rs-testimonial-track">
+          <div class="rs-testimonial-slides" id="rs-testimonial-slides"></div>
+        </div>
+        <div class="rs-testimonial-dots" id="rs-testimonial-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rs-section rs-section--white" id="ubicacion" aria-labelledby="ubicacion-title">
+    <div class="rs-container">
+      <div class="rs-section-head rs-reveal">
+        <span class="rs-eyebrow">Visítanos</span>
+        <h2 id="ubicacion-title">Ubicación y contacto</h2>
+      </div>
+      <div class="rs-contact-grid">
+        <div class="rs-reveal">
+          <div class="rs-contact-item">
+            <strong>Teléfono</strong>
+            <span id="rs-contact-phone"></span>
+          </div>
+          <div class="rs-contact-item">
+            <strong>Email</strong>
+            <a id="rs-contact-email" href="#"></a>
+          </div>
+          <div class="rs-contact-item">
+            <strong>Dirección</strong>
+            <span id="rs-contact-address"></span>
+          </div>
+          <div class="rs-contact-item">
+            <strong>Horario</strong>
+            <span id="rs-contact-hours"></span>
+          </div>
+          <div class="rs-contact-item">
+            <strong>Redes sociales</strong>
+            <div class="rs-social" id="rs-social"></div>
+          </div>
+          <div class="rs-contact-item">
+            <strong>Delivery</strong>
+            <div class="rs-delivery" id="rs-delivery"></div>
+          </div>
+          <a class="rs-btn rs-btn--wa" id="rs-contact-wa" href="#" target="_blank" rel="noopener noreferrer" style="margin-top:0.5rem">
+            <svg aria-hidden="true" width="18" height="18"><use href="#icon-wa"></use></svg>
+            Pedir o reservar por WhatsApp
+          </a>
+        </div>
+        <div class="rs-reveal">
+          <p style="color:var(--rs-muted);margin-bottom:1rem">Estamos en San Isidro, Lima. Ideal para almuerzos, cenas y pedidos a domicilio.</p>
+          <a class="rs-btn rs-btn--dark" href="#carta">Ver carta completa</a>
+        </div>
+      </div>
+      <div class="rs-map rs-reveal">
+        <iframe id="rs-map" title="Ubicación del restaurante en Lima" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rs-footer">
+    <div class="rs-container">
+      <p class="rs-footer-brand" id="rs-footer-name">Sabor Limeño</p>
+      <p>Cocina peruana · Lima, Perú</p>
+      <p class="rs-footer-demo">Demo desarrollado por <a href="https://innotec.solutions/" target="_blank" rel="noopener noreferrer">INNOTEC Solutions</a></p>
+    </div>
+  </footer>
+
+  <a class="rs-fab-wa" id="rs-fab-wa" href="#" target="_blank" rel="noopener noreferrer" aria-label="Pedir por WhatsApp">
+    <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+  </a>
+
+  <script src="assets/restaurante-content.js"></script>
+  <script src="assets/restaurante.js"></script>
+</body>
+</html>
