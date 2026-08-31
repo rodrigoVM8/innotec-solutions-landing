@@ -17,7 +17,7 @@
   }
 
   function waUrl(message) {
-    var phone = data.company.phoneWa || "51999456789";
+    var phone = data.company.phoneWa || "51973771415";
     return (
       "https://wa.me/" +
       phone +

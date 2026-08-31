@@ -2,8 +2,8 @@ window.RESTAURANTE_DEMO = {
   company: {
     name: "Sabor Limeño",
     tagline: "Cocina peruana · Hecho con alma",
-    phone: "+51 999 321 654",
-    phoneWa: "51999321654",
+    phone: "+51 973 771 415",
+    phoneWa: "51973771415",
     email: "hola@saborlimeno.pe",
     address: "Calle Las Begonias 475, San Isidro, Lima",
     hours: "Lun–Dom 12:00–22:00",

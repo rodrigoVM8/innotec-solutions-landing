@@ -2,8 +2,8 @@ window.TURISMO_DEMO = {
   company: {
     name: "Andes Soul Lodge & Experiences",
     tagline: "Hospedaje boutique · Tours auténticos · Perú",
-    phone: "+51 984 567 890",
-    phoneWa: "51984567890",
+    phone: "+51 973 771 415",
+    phoneWa: "51973771415",
     email: "reservas@andessoul.pe",
     address: "Calle Suecia 480, San Blas, Cusco",
     hours: "Atención diaria 7:00–21:00 · Reservas 24/7 por WhatsApp",

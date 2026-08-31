@@ -2,8 +2,8 @@ window.CLINICA_DEMO = {
   company: {
     name: "Sonrisa Perú Clínica Dental",
     tagline: "Odontología · Estética dental · Bienestar",
-    phone: "+51 999 456 789",
-    phoneWa: "51999456789",
+    phone: "+51 973 771 415",
+    phoneWa: "51973771415",
     email: "citas@sonrisaperu.pe",
     address: "Av. Arequipa 2650, Lince, Lima",
     hours: "Lun–Vie 9:00–20:00 · Sáb 9:00–14:00",

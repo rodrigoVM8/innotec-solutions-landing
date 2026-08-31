@@ -2,8 +2,8 @@ window.DRYWALL_DEMO = {
   company: {
     name: "ProDrywall Perú",
     tagline: "Drywall · Cielos rasos · Remodelación",
-    phone: "+51 999 123 456",
-    phoneWa: "51999123456",
+    phone: "+51 973 771 415",
+    phoneWa: "51973771415",
     email: "contacto@prodrywall.pe",
     address: "Av. Javier Prado Este 4200, Santiago de Surco, Lima",
     hours: "Lun–Vie 8:00–18:00 · Sáb 9:00–13:00",
