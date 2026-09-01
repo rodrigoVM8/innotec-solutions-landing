@@ -79,6 +79,23 @@
     </symbol>
   </svg>
 
+  <div class="site-top" id="site-top">
+    <aside class="promo-bar" id="promo-bar" aria-label="Promoción de reapertura">
+      <div class="promo-bar-inner">
+        <p class="promo-bar-text">
+          <strong>Reapertura INNOTEC</strong>
+          <span class="promo-bar-sep" aria-hidden="true">·</span>
+          Diagnóstico gratuito (5 cupos)
+          <span class="promo-bar-sep" aria-hidden="true">·</span>
+          20% en tu primer proyecto
+          <span class="promo-bar-sep" aria-hidden="true">·</span>
+          hasta el 30 de septiembre
+        </p>
+        <a class="promo-bar-cta" href="#servicios">Ver oferta</a>
+        <button class="promo-bar-close" id="promo-close" type="button" aria-label="Cerrar promoción">×</button>
+      </div>
+    </aside>
+
   <nav class="site-nav" aria-label="Principal">
     <div class="nav-inner">
       <a class="nav-logo" href="#inicio" aria-label="INNOTEC Solutions">
@@ -105,6 +122,7 @@
       </div>
     </div>
   </nav>
+  </div>
 
   <header class="hero" id="inicio">
     <div class="hero-inner hero-cascade">
@@ -240,14 +258,33 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">Servicios</span>
-          <h2 id="servicios-title">Automatización de procesos y software a medida, con precio claro</h2>
-          <p>Elige qué resolver hoy: reportes, apps de gestión, bots de WhatsApp o un diagnóstico. Te respondemos por WhatsApp.</p>
+          <h2 id="servicios-title">Software, automatización e integraciones con precio claro</h2>
+          <p>Partner tecnológico para pymes en Perú: desde el diagnóstico hasta el soporte continuo. Cotización sin compromiso por WhatsApp o formulario.</p>
         </div>
 
         <div class="services-grid">
-          <article class="service-card reveal">
+          <article class="service-card service-card--featured reveal">
+            <span class="service-badge">Promo reapertura</span>
+            <h3>Diagnóstico de automatización</h3>
+            <p class="desc">Analizamos tus procesos y te decimos qué automatizar primero, con prioridad y retorno estimado.</p>
+            <p class="scope">Alcance típico: sesión de 1 h + informe de prioridades</p>
+            <p class="price price--promo"><span class="price-was">S/ 500</span> Gratis</p>
+            <a
+              class="btn btn-primary btn-block"
+              href="https://wa.me/51973771415?text=Hola%2C%20quiero%20agendar%20mi%20diagn%C3%B3stico%20gratuito%20de%20reapertura%20INNOTEC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+              Agendar diagnóstico gratis
+            </a>
+          </article>
+
+          <article class="service-card service-card--featured reveal">
+            <span class="service-badge service-badge--muted">Más pedido</span>
             <h3>Automatización de reportes y procesos</h3>
-            <p class="desc">Digitación manual, conciliaciones, tipo de cambio, reportes: todo automático.</p>
+            <p class="desc">Digitación manual, conciliaciones, tipo de cambio y reportes: flujos automáticos que ahorran horas cada semana.</p>
+            <p class="scope">Alcance típico: 1 proceso · entrega 1–2 semanas</p>
             <p class="price">Desde S/ 800</p>
             <a
               class="btn btn-wa btn-block"
@@ -261,8 +298,25 @@
           </article>
 
           <article class="service-card reveal">
-            <h3>Aplicación de gestión a medida</h3>
-            <p class="desc">Sistemas de control, inventario, ventas o reservas hechos a la medida de tu negocio. Web o escritorio.</p>
+            <h3>Integración de sistemas</h3>
+            <p class="desc">Conectamos SAP, APIs, Excel, ERP y herramientas cloud para que la información fluya sin duplicar trabajo.</p>
+            <p class="scope">Alcance típico: 2 sistemas conectados · cotización en 24 h</p>
+            <p class="price">Desde S/ 1,500</p>
+            <a
+              class="btn btn-wa btn-block"
+              href="https://wa.me/51973771415?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20integraci%C3%B3n%20de%20sistemas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+              Consultar por WhatsApp
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <h3>Software y apps a medida</h3>
+            <p class="desc">Sistemas de inventario, ventas, reservas o control interno. Web, escritorio o móvil según tu operación.</p>
+            <p class="scope">Alcance típico: MVP funcional · varias semanas según alcance</p>
             <p class="price">Desde S/ 2,500</p>
             <a
               class="btn btn-wa btn-block"
@@ -276,8 +330,9 @@
           </article>
 
           <article class="service-card reveal">
-            <h3>Automatización de atención al cliente</h3>
-            <p class="desc">Bots de WhatsApp o web que responden consultas, agendan citas y filtran clientes las 24 horas.</p>
+            <h3>Bots y atención al cliente</h3>
+            <p class="desc">WhatsApp o web: responden consultas, agendan citas y filtran leads las 24 horas sin ampliar personal.</p>
+            <p class="scope">Alcance típico: bot configurado + flujos principales</p>
             <p class="price">Desde S/ 1,200</p>
             <a
               class="btn btn-wa btn-block"
@@ -290,13 +345,34 @@
             </a>
           </article>
 
+          <article class="service-card service-card--featured reveal">
+            <span class="service-badge service-badge--muted">Demos en vivo</span>
+            <h3>Sitios web profesionales</h3>
+            <p class="desc">Landing pages y mini-sitios para negocios locales: responsive, WhatsApp, formularios y diseño premium.</p>
+            <p class="scope">Alcance típico: sitio completo · 1–3 semanas</p>
+            <p class="price">Desde S/ 1,800</p>
+            <div class="service-card-actions">
+              <a class="btn btn-primary btn-block" href="ejemplos/">Ver ejemplos web</a>
+              <a
+                class="btn btn-wa btn-block"
+                href="https://wa.me/51973771415?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20sitio%20web%20profesional"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+                Cotizar sitio
+              </a>
+            </div>
+          </article>
+
           <article class="service-card reveal">
-            <h3>Diagnóstico y consultoría de automatización</h3>
-            <p class="desc">Analizamos tus procesos y te decimos exactamente qué automatizar primero.</p>
-            <p class="price">Desde S/ 500</p>
+            <h3>Rescate y auditoría de software</h3>
+            <p class="desc">Proyectos a medias con IA, Lovable, Cursor u otras herramientas: revisamos, corregimos y llevamos a producción.</p>
+            <p class="scope">Alcance típico: auditoría + plan de rescate</p>
+            <p class="price">Desde S/ 1,000</p>
             <a
               class="btn btn-wa btn-block"
-              href="https://wa.me/51973771415?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20diagn%C3%B3stico%20y%20consultor%C3%ADa%20de%20automatizaci%C3%B3n"
+              href="https://wa.me/51973771415?text=Hola%2C%20tengo%20un%20proyecto%20de%20software%20a%20medias%20y%20necesito%20rescate%20o%20auditor%C3%ADa"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -304,6 +380,49 @@
               Consultar por WhatsApp
             </a>
           </article>
+
+          <article class="service-card reveal">
+            <h3>Soporte y evolución</h3>
+            <p class="desc">Mantenimiento, correcciones, nuevas funciones e integraciones para sistemas ya en producción.</p>
+            <p class="scope">Alcance típico: bolsa mensual de horas · SLA acordado</p>
+            <p class="price">Desde S/ 400<span class="price-period">/mes</span></p>
+            <a
+              class="btn btn-wa btn-block"
+              href="https://wa.me/51973771415?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20soporte%20y%20evoluci%C3%B3n%20de%20software"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+              Consultar por WhatsApp
+            </a>
+          </article>
+        </div>
+
+        <p class="services-note reveal">Precio final según complejidad. La promo de reapertura aplica a diagnóstico gratuito (5 cupos) y 20% de descuento en el primer proyecto contratado antes del 30 de septiembre.</p>
+      </div>
+    </section>
+
+    <section class="section web-offer-section" aria-labelledby="web-offer-title">
+      <div class="container">
+        <div class="web-offer-band reveal">
+          <div class="web-offer-body">
+            <span class="eyebrow">Desarrollo web</span>
+            <h2 id="web-offer-title">Sitios web que convierten visitas en clientes</h2>
+            <p>Demos reales para restaurantes, clínicas, turismo, construcción y más. Personalizables y listos para mostrar a tus clientes o lanzar tu negocio.</p>
+            <p class="web-offer-price">Desde S/ 1,800 · Promo reapertura: 20% en tu primer proyecto</p>
+          </div>
+          <div class="web-offer-actions">
+            <a class="btn btn-primary" href="ejemplos/">Ver ejemplos web →</a>
+            <a
+              class="btn btn-wa"
+              href="https://wa.me/51973771415?text=Hola%2C%20quiero%20cotizar%20un%20sitio%20web%20profesional"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+              Cotizar mi sitio
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -651,6 +770,7 @@
     <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
   </a>
 
+  <script src="assets/promo.js"></script>
   <script src="assets/process-steps.js"></script>
   <script src="assets/process.js"></script>
   <script src="assets/contact-config.js"></script>
