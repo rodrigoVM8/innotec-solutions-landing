@@ -52,6 +52,8 @@
         "url": "https://innotec.solutions/",
         "logo": "https://innotec.solutions/assets/logo-mark.png",
         "description": "Desarrollo de software, automatización de procesos e inteligencia artificial para empresas en Perú.",
+        "email": "support@innotec.solutions",
+        "telephone": "+51-973-771-415",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "La Molina",
@@ -90,8 +92,10 @@
         <a href="ejemplos/">Ejemplos web</a>
         <a href="blog/">Blog</a>
         <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
       </div>
       <div class="nav-actions">
+        <a class="btn btn-nav btn-nav--outline" href="#contacto" data-schedule>Agendar diagnóstico</a>
         <a
           class="btn btn-nav"
           href="https://wa.me/51973771415?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20negocio"
@@ -121,16 +125,19 @@
       </div>
 
       <div class="hero-cta">
-        <a
-          class="btn btn-primary"
-          href="https://wa.me/51973771415?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20negocio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
-          Escríbenos por WhatsApp
-        </a>
-        <p class="microcopy">Diagnóstico inicial por WhatsApp · respuesta en el día</p>
+        <div class="hero-cta-row">
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/51973771415?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20negocio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+            Escríbenos por WhatsApp
+          </a>
+          <a class="btn btn-outline" href="#contacto" data-schedule>Agendar diagnóstico</a>
+        </div>
+        <p class="microcopy">WhatsApp o formulario · respuesta en el día</p>
       </div>
     </div>
   </header>
@@ -532,29 +539,105 @@
       </div>
     </section>
 
-    <section class="final-cta" id="contacto" aria-labelledby="cta-title">
-      <div class="container reveal">
-        <h2 id="cta-title">Recupera horas de tu semana. Empieza hoy</h2>
-        <p>Escríbenos por WhatsApp. Te respondemos, entendemos tu proceso y te decimos qué conviene automatizar primero.</p>
-        <p class="coverage">Atendemos Lima y todo el Perú</p>
-        <a
-          class="btn btn-wa"
-          href="https://wa.me/51973771415?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20para%20mi%20negocio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
-          Escríbenos por WhatsApp
-        </a>
+    <section class="section contact-section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2 id="contacto-title">Solicita una evaluación de tu proyecto</h2>
+          <p>Cuéntanos qué proceso necesitas mejorar. Revisamos alcance, tiempos y presupuesto — por formulario, email o videollamada.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Hablemos de tu próximo proyecto</h3>
+            <p class="contact-lead">Atendemos Lima y todo el Perú. También puedes escribirnos directamente o agendar un diagnóstico estratégico.</p>
+
+            <div class="contact-item">
+              <strong>Email</strong>
+              <a id="contact-email" href="mailto:support@innotec.solutions">support@innotec.solutions</a>
+            </div>
+            <div class="contact-item">
+              <strong>Teléfono</strong>
+              <span id="contact-phone">+51 973 771 415</span>
+            </div>
+            <div class="contact-item">
+              <strong>Oficina</strong>
+              <span id="contact-address">La Molina, Lima, Perú</span>
+            </div>
+            <div class="contact-item">
+              <strong>Horario</strong>
+              <span id="contact-hours">Lun–vie 9:00–18:00 · Respuesta por email en menos de 24 h</span>
+            </div>
+
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="#contacto-form" data-schedule>Agendar diagnóstico</a>
+              <a class="btn btn-wa" id="contact-wa" href="#" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="#icon-wa"></use></svg>
+                WhatsApp directo
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <h3 id="contacto-form">Envíanos tu consulta</h3>
+            <div class="contact-form-grid">
+              <div class="form-group form-group--full">
+                <label for="contact-name">Nombres</label>
+                <input type="text" id="contact-name" name="name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="contact-company">Empresa</label>
+                <input type="text" id="contact-company" name="company" autocomplete="organization" />
+              </div>
+              <div class="form-group">
+                <label for="contact-role">Cargo</label>
+                <input type="text" id="contact-role" name="role" autocomplete="organization-title" />
+              </div>
+              <div class="form-group">
+                <label for="contact-phone-input">Teléfono</label>
+                <input type="tel" id="contact-phone-input" name="phone" required autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="contact-email-input">Correo electrónico</label>
+                <input type="email" id="contact-email-input" name="email" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="contact-country">País</label>
+                <select id="contact-country" name="country"></select>
+              </div>
+              <div class="form-group form-group--full">
+                <label for="contact-subject">Asunto</label>
+                <select id="contact-subject" name="subject" required></select>
+              </div>
+              <div class="form-group form-group--full">
+                <label for="contact-message">Mensaje</label>
+                <textarea id="contact-message" name="message" rows="5" required placeholder="Cuéntanos qué proceso quieres automatizar o qué sistema necesitas…"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar consulta</button>
+            <p class="form-privacy">Al enviar tus datos, aceptas que INNOTEC Solutions te contacte sobre tu consulta.</p>
+            <p class="form-success" id="contact-success" role="status">¡Gracias! Hemos recibido tu consulta. Si no se abrió tu correo, escríbenos a support@innotec.solutions.</p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand-block">
+        <p class="footer-brand">INNOTEC <span>SOLUTIONS</span></p>
+        <p class="footer-tagline">Software · Automatización · Inteligencia Artificial</p>
+        <p><a href="https://innotec.solutions" rel="noopener">innotec.solutions</a></p>
+      </div>
+      <div class="footer-contact">
+        <p><a id="footer-email" href="mailto:support@innotec.solutions">support@innotec.solutions</a></p>
+        <p><a id="footer-phone" href="tel:+51973771415">+51 973 771 415</a></p>
+        <p id="footer-address">La Molina, Lima, Perú</p>
+      </div>
+    </div>
     <div class="container">
-      <p class="footer-brand">INNOTEC <span>SOLUTIONS</span></p>
-      <p><a href="https://innotec.solutions" rel="noopener">innotec.solutions</a></p>
-      <p class="footer-meta">Lima, Perú · INNOTEC SOLUTIONS S.A.C. · RUC 20614075075 · Atendemos Lima y todo el Perú</p>
+      <p class="footer-meta">INNOTEC SOLUTIONS S.A.C. · RUC 20614075075 · Atendemos Lima y todo el Perú</p>
     </div>
   </footer>
 
@@ -570,6 +653,8 @@
 
   <script src="assets/process-steps.js"></script>
   <script src="assets/process.js"></script>
+  <script src="assets/contact-config.js"></script>
+  <script src="assets/contact.js"></script>
   <script>
     (function () {
       var hero = document.querySelector(".hero-cascade");
